@@ -8,7 +8,8 @@ namespace PDGfast
         {
             Console.WriteLine($"Start");
 
-            Random rnd = new Random();
+            int seed = DateTime.Now.Millisecond;
+            Random rnd = new Random(seed);
             int BestTotal = 0;
             int BestRolls = 0;
             //ulong counter = 0;
